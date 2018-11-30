@@ -1,0 +1,22 @@
+def excercise1(a,b):
+	'''
+	Docstring: Lesser or greater of two numbers (Python Udemy Bootcamp excercise)
+	Input: Two integers
+	Output: 
+	* returns the lesser of two given numbers if both numbers are even,
+	* returns the greater if one or both numbers are odd
+	'''
+    
+	small = min(a,b)
+	high = max(a,b)
+
+	if a and b %2 == 0:
+		return small
+	if a and b %2 != 0:
+		return high
+
+sample1 = excercise1(2,4)
+sample2 = excercise1(2,5)
+
+print(sample1)
+print(sample2)
